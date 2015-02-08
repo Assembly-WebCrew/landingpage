@@ -30,6 +30,7 @@
 			if (event.data === YT.PlayerState.ENDED) {
 				$id('skriik').style.display = 'none';
 				showWrapper();
+				player.stopVideo();
 				player.seekTo(0);
 			}
 		}
@@ -37,7 +38,7 @@
 		// Load Youtube video.
 		$id('skriik').style.display = 'none';
 		var player = new YT.Player('skriik', {
-			videoId: 'DI3PJ1t_sOg',
+			videoId: 'DI3PJ1t_sOg', // 'hS5CfP8n_js',
 			playerVars: {
 				rel: 0
 			},
@@ -49,8 +50,8 @@
 		// Setup konami code.
 		var easterEgg = new Konami();
 		easterEgg.code = function () {
-			player.playVideo();
 			$id('skriik').style.display = 'block';
+			player.playVideo();
 			hideWrapper();
 		};
 		easterEgg.load();
