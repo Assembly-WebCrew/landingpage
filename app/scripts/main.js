@@ -3,7 +3,8 @@
 
 	/* global Konami, YT */
 	var $id = document.getElementById.bind(document),
-		$class = document.getElementsByClassName.bind(document);
+		$class = document.getElementsByClassName.bind(document),
+		player;
 
 	function loadYTApi() {
 		var tag = document.createElement('script');
@@ -24,20 +25,31 @@
 		$class('overlay')[0].style.background = undefined;
 	}
 
+	function stopVideo() {
+		$id('skriik').style.display = 'none';
+		showWrapper();
+		player.stopVideo();
+		player.seekTo(0);
+	}
+
+	document.addEventListener('keyup', function (event) {
+		if (player && event.keyCode === 27 &&
+			player.getPlayerState() === YT.PlayerState.PLAYING) {
+			stopVideo();
+		}
+	});
+
 	window.onYouTubeIframeAPIReady = function () {
 
 		function onPlayerStateChange(event) {
 			if (event.data === YT.PlayerState.ENDED) {
-				$id('skriik').style.display = 'none';
-				showWrapper();
-				player.stopVideo();
-				player.seekTo(0);
+				stopVideo();
 			}
 		}
 
 		// Load Youtube video.
 		$id('skriik').style.display = 'none';
-		var player = new YT.Player('skriik', {
+		player = new YT.Player('skriik', {
 			videoId: 'DI3PJ1t_sOg', // 'hS5CfP8n_js',
 			playerVars: {
 				rel: 0
