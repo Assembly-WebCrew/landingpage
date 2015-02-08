@@ -60,13 +60,11 @@
 		});
 
 		// Setup konami code.
-		var easterEgg = new Konami();
-		easterEgg.code = function () {
+		new Konami(function () {
 			$id('skriik').style.display = 'block';
 			player.playVideo();
 			hideWrapper();
-		};
-		easterEgg.load();
+		});
 
 	};
 
