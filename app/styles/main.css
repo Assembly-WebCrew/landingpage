@@ -92,7 +92,7 @@ h3 {
 }
 
 .btn-1e a {
-	transition: color 0.3s ease-in-out;
+	transition: color 0.3s;
 }
 .btn-1e:hover a {
 	color: #000;
@@ -180,7 +180,7 @@ h3 {
 .icon {
 	opacity: 0.7;
 	filter:alpha(opacity=70);
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -207,7 +207,7 @@ h3 {
 }
 .sub-nav li a {
 	color: #CCC;
-	transition: color 0.3s ease-in-out;
+	transition: color 0.3s;
 }
 .sub-nav li a:hover {
 	color: #FFF;
