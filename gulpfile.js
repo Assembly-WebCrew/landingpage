@@ -3,6 +3,7 @@
 // generated on 2015-02-08 using generator-gulp-webapp 0.2.0
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var pngquant = require('imagemin-pngquant');
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.css')
@@ -36,8 +37,7 @@ gulp.task('html', ['styles'], function () {
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')
     .pipe($.imagemin({
-      progressive: true,
-      interlaced: true
+      use: [pngquant({ quality: '65-80', speed: 4 })]
     }))
     .pipe(gulp.dest('dist/images'));
 });
