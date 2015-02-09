@@ -1,3 +1,19 @@
+/* latin */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(https://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body, html {
 	height: 100%;
 	width: 100%;
@@ -82,71 +98,71 @@ h3 {
 	color: #000;
 }
 .btn {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 25px 50px;
-  display: inline-block;
-  margin: 35px 30px 15px 30px;
-  text-transform: uppercase;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 50px;
+	display: inline-block;
+	margin: 35px 30px 15px 30px;
+	text-transform: uppercase;
 	min-width: 255px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 3px solid #fff;
+	letter-spacing: 1px;
+	font-weight: 800;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	border: 3px solid #fff;
 }
 .btn:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .btn:before {
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
 }
 .btn-1e {
-  overflow: hidden;
+	overflow: hidden;
 }
 .btn-1e:after {
-  width: 100%;
-  height: 0;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-  opacity: 0;
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 .btn-1e:hover,
 .btn-1e:active {
-  color: #0e83cd;
+	color: #0e83cd;
 }
 
 .btn-1e:hover:after {
-  height: 400%;
-  opacity: 1;
+	height: 400%;
+	opacity: 1;
 }
 .btn-1e:active:after {
-  height: 400%;
-  opacity: 1;
+	height: 400%;
+	opacity: 1;
 }
 
 .some-icons {
@@ -162,7 +178,7 @@ h3 {
 	margin: 10px;
 }
 .icon {
-	 opacity: 0.7;
+	opacity: 0.7;
 	filter:alpha(opacity=70);
 	transition: all 0.3s ease-in-out;
 	position: absolute;
@@ -174,7 +190,6 @@ h3 {
 	margin: 0 auto;
 	width: 32px;
 	height: 32px;
-	transition: all 0.3s ease-in-out;
 	display: inline-block;
 }
 .icon:hover {
@@ -198,10 +213,10 @@ h3 {
 	color: #FFF;
 }
 .sub-nav {
-  display: block;
-  text-align: center;
-  padding: 0;
-  margin: 50px 0 0;
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 50px 0 0;
 }
 
 @media screen and (max-width:960px) {
