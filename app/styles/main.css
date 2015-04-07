@@ -45,6 +45,22 @@ h3 {
 	margin-top: 0;
 }
 
+p {
+	max-width: 800px;
+	padding: 0 15px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	font-size: 1rem;
+}
+
+p > a {
+	text-decoration: underline;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
+
 .video {
 	position: absolute;
 	left: 0;
